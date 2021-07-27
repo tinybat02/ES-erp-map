@@ -1,0 +1,96 @@
+.p-legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  border-radius: 3px;
+  line-height: 22px;
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.p-legend h4 {
+  text-align: center;
+  font-size: 12px;
+  margin: 2px 12px 8px;
+}
+
+.p-legend .row {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.p-legend .square {
+  width: 18px;
+  height: 18px;
+}
+
+.p-legend span {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.p-tool {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  caret-color: transparent;
+}
+
+.p-content {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 0px 15px;
+}
+
+.p-content input {
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+}
+.p-content label {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.p-tool select {
+  width: 100px;
+  appearance: none;
+  text-indent: 5px;
+}
+
+.p-info {
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-info h2 {
+  padding: 10px;
+}
+
+.p-info-content {
+  width: 70%;
+}
+
+.p-info-content div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.p-info-content div:last-child {
+  border-bottom: none;
+}

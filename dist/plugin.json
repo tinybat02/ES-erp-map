@@ -1,0 +1,25 @@
+{
+  "type": "panel",
+  "name": "ES Sale Map",
+  "id": "id-es-sale-heatmap",
+  "dataFormats": ["table"],
+  "info": {
+    "description": "ES Sale Map",
+    "author": {
+      "name": "Nam Le"
+    },
+    "keywords": [],
+    "logos": {
+      "small": "img/poheat.svg",
+      "large": "img/poheat.svg"
+    },
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2021-07-27"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}
