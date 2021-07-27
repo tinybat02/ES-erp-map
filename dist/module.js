@@ -55667,7 +55667,6 @@ function (_super) {
   MainPanel.prototype.componentDidMount = function () {
     var _this = this;
 
-    console.log('erp ', this.props.data);
     var _a = this.props.options,
         tile_url1 = _a.tile_url1,
         zoom_level = _a.zoom_level,
@@ -55766,9 +55765,6 @@ function (_super) {
       }
 
       var name = selectedFeature.get('name');
-      console.log('name ', name); // const net_value = selectedFeature.get('net_value');
-      // const quantity = selectedFeature.get('quantity');
-
       var net_value = _this.by_net_value[name];
       var quantity = _this.by_quantity[name];
       var visitors = _this.by_visitors[name];
@@ -55787,7 +55783,6 @@ function (_super) {
 
   MainPanel.prototype.componentDidUpdate = function (prevProps, prevState) {
     if (prevProps.data.series !== this.props.data.series) {
-      console.log('update ', this.props.data);
       this.map.removeLayer(this.net1);
       this.map.removeLayer(this.quan1);
       this.map.removeLayer(this.net1);
@@ -56223,9 +56218,6 @@ var processData = function processData(series) {
     var polygon_name = area.name || '_';
     if (polygon_name.startsWith('_')) by_net_value[polygon_name.substring(1)] = Math.round(sum * 100) / 100;else if (polygon_name.startsWith('0_')) by_quantity[polygon_name.substring(2)] = Math.round(sum * 10) / 10;else by_visitors[polygon_name] = Math.round(sum);
   });
-  console.log('net value ', by_net_value);
-  console.log('quantity ', by_quantity);
-  console.log('visitors ', by_visitors);
   return {
     by_net_value: by_net_value,
     by_quantity: by_quantity,

@@ -53,7 +53,6 @@ export class MainPanel extends PureComponent<Props, State> {
   };
 
   componentDidMount() {
-    console.log('erp ', this.props.data);
     const { tile_url1, zoom_level, center_lon, center_lat } = this.props.options;
 
     const carto = new TileLayer({
@@ -147,9 +146,6 @@ export class MainPanel extends PureComponent<Props, State> {
       }
 
       const name = selectedFeature.get('name');
-      console.log('name ', name);
-      // const net_value = selectedFeature.get('net_value');
-      // const quantity = selectedFeature.get('quantity');
       const net_value = this.by_net_value[name];
       const quantity = this.by_quantity[name];
       const visitors = this.by_visitors[name];
@@ -159,7 +155,6 @@ export class MainPanel extends PureComponent<Props, State> {
 
   componentDidUpdate(prevProps: Props, prevState: State) {
     if (prevProps.data.series !== this.props.data.series) {
-      console.log('update ', this.props.data);
       this.map.removeLayer(this.net1);
       this.map.removeLayer(this.quan1);
       this.map.removeLayer(this.net1);

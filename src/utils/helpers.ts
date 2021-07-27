@@ -190,8 +190,5 @@ export const processData = (series: Frame[]) => {
     else by_visitors[polygon_name] = Math.round(sum);
   });
 
-  console.log('net value ', by_net_value);
-  console.log('quantity ', by_quantity);
-  console.log('visitors ', by_visitors);
   return { by_net_value, by_quantity, by_visitors };
 };
