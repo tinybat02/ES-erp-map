@@ -55459,7 +55459,7 @@ var MainEditor = function MainEditor(_a) {
       var _a;
 
       var obj = JSON.parse(reader.result);
-      onOptionsChange(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, options), (_a = {}, _a[optionFile] = obj, _a)));
+      onOptionsChange(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, inputs), (_a = {}, _a[optionFile] = obj, _a)));
     };
 
     reader.readAsText(chosenFile);

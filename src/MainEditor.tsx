@@ -75,7 +75,7 @@ export const MainEditor: React.FC<PanelEditorProps<PanelOptions>> = ({ options, 
     reader.onloadend = function() {
       const obj = JSON.parse(reader.result as string);
       onOptionsChange({
-        ...options,
+        ...inputs,
         [optionFile]: obj,
       });
     };
